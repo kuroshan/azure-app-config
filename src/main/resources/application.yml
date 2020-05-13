@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ms-azure-app-config
+  datasource:
+    url: ${config.dbpacifico.datasource.url}
+    username: ${config.dbpacifico.datasource.username}
+    password: ${config.dbpacifico.datasource.password}
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+
+custom:
+  datasource:
+    url: ${config.dbpacifico.datasource.url}
+    username: ${config.dbpacifico.datasource.username}
+    password: ${config.dbpacifico.datasource.password}

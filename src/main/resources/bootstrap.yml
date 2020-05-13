@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: ms-azure-app-config
+  cloud:
+    azure:
+      appconfiguration:
+        stores[0]:
+          endpoint: ${APP_CONFIGURATION_ENDPOINT}
+        cacheExpiration: 30000
+        defaultContext: pacificoapp
